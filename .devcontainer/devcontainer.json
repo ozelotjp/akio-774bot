@@ -1,0 +1,31 @@
+{
+  "name": "akio-774bot",
+  "extensions": [
+    // General
+    "editorconfig.editorconfig",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    // ESLint
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "[typescript]": {
+      "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+    ],
+  },
+  // Docker-Compose
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app"
+}
